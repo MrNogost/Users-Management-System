@@ -23,7 +23,7 @@ function HomePage() {
           <div>
             <div className="logo-container">
              <a href="/">
-            <img src="/logo.png" alt="Logo" className="logo" />
+            <img src="/logo.PNG" alt="Logo" className="logo" />
             </a>
             </div>
             <h1>Sistema de gestion de trabajadores</h1>

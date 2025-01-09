@@ -118,7 +118,7 @@ function App() {
     <div className="app-container">
       <div className="logo-container">
         <a href="/">
-          <img src="/logo.png" alt="Logo" className="logo" />
+          <img src="/logo.PNG" alt="Logo" className="logo" />
         </a>
       </div>
       <h1>Añadir Trabajador</h1>

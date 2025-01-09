@@ -1,0 +1,183 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Logo styling */
+.logo-container {
+  margin-top: 5px;
+  padding: 0;
+  display: flex;
+  justify-content: center; /* Center the logo horizontally */
+  margin-bottom: 20px; /* Space between logo and form */
+}
+
+.logo {
+  width: 300px;
+  height: 100px;
+  object-fit: cover;
+  display: block;
+  margin: 0;
+}
+
+/* Body Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff; /* White background */
+  color: #333; /* Dark text color */
+  display: flex;
+  justify-content: flex-start; /* Align content to the top */
+  align-items: center; /* Center content vertically */
+  flex-direction: column; /* Stack elements vertically */
+  min-height: 100vh; /* Ensure body takes full viewport height */
+  padding-top: 20px; /* Add some space at the top */
+}
+
+/* Form Container */
+form {
+  margin-top: 20px; /* Space between the form and the logo */
+  padding: 0;
+  border-radius: 8px;
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  color: #333; /* Dark text inside form */
+  background-color: transparent; /* Remove the black background */
+}
+
+/* Label Styling */
+label {
+  text-align: left; /* Align the label text to the left */
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block;
+  font-size: 14px;
+  color: #333;
+}
+
+/* Input Fields */
+input,
+textarea {
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #007bff;
+  border-radius: 4px;
+  background-color: #f7f7f7;
+  color: #333;
+}
+
+input[type="file"] {
+  padding: 5px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #28a745;
+  outline: none;
+}
+
+/* Buttons */
+button {
+  background-color: transparent;
+  color: #333;
+  border: 2px solid #000;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+button:hover {
+  color: #ff6f00;
+}
+
+button:active {
+  color: #28a745;
+}
+
+button:focus {
+  color: #007bff;
+}
+
+button:disabled {
+  color: #ccc;
+  background-color: transparent;
+  border-color: #ccc;
+  cursor: not-allowed;
+}
+
+button:disabled:hover {
+  color: #ccc;
+}
+
+/* Error Message Styling */
+.error {
+  color: red; /* Red color for error messages */
+  font-size: 12px; /* Smaller size for error messages */
+  margin-top: 5px; /* Add space above the error message */
+  text-align: left; /* Align the error message to the left */
+  display: block; /* Ensure error message is a block element */
+}
+
+/* Input Field Focus Effect */
+input:focus {
+  border-color: #28a745;
+}
+
+/* Responsive Design */
+@media (max-width: 500px) {
+  form {
+    width: 90%;
+    padding: 15px;
+  }
+}
+
+/* Table Styles for Show All Workers */
+table {
+  width: 100%; /* Full width of the container */
+  border-collapse: collapse; /* Remove gaps between cells */
+  margin: 20px 0; /* Space above and below the table */
+  font-size: 16px; /* Font size for table text */
+  text-align: left; /* Align text to the left */
+  background-color: #f9f9f9; /* Light background color for the table */
+}
+
+th {
+  background-color: #007bff; /* Blue background for header */
+  color: white; /* White text in header */
+  padding: 10px; /* Padding inside header cells */
+  border: 1px solid #ddd; /* Border around header cells */
+  text-transform: uppercase; /* Uppercase text for headers */
+}
+
+td {
+  padding: 10px; /* Padding inside body cells */
+  border: 1px solid #ddd; /* Border around body cells */
+}
+
+tbody tr:hover {
+  background-color: #f1f1f1; /* Light gray background on hover */
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f2f2f2; /* Slightly darker background for even rows */
+}
+
+/* Responsive Design for Table */
+@media (max-width: 500px) {
+  table {
+    font-size: 14px; /* Smaller font size for smaller screens */
+  }
+
+  th, td {
+    padding: 8px; /* Reduced padding for smaller screens */
+  }
+}
